@@ -25,6 +25,10 @@ export default function SEO({
       content: `website`,
     },
     {
+      property: `og:image`,
+      content: `/meta/social-preview.jpg`
+    },
+    {
       name: `twitter:card`,
       content: `summary`,
     },
@@ -40,12 +44,21 @@ export default function SEO({
       name: `twitter:description`,
       content: description,
     },
+    {
+      name: `twitter:image`,
+      content: `/meta/social-preview.jpg`
+    },
   ].concat(meta);
   return (
     <Head>
       <title>{title}</title>
-      {metaData.map(({ name, content }, i) => (
-        <meta key={i} name={name} content={content} />
+      {metaData.map(({ name, property, content }, i) => (
+        <meta
+          key={i}
+          name={name}
+          property={property}
+          content={content}
+        />
       ))}
     </Head>
   );
