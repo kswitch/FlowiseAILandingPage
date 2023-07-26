@@ -112,17 +112,22 @@ const styles = {
     mx: "auto",
     display: "none",
     "@media screen and (min-width: 1024px)": {
-      display: "block",
+      display: "flex",
+      gap: "2rem",
+      justifyContent: "space-between"
     },
     a: {
-      fontSize: "16px",
+      fontSize: "1.05rem",
       fontWeight: "400",
-      px: 25,
+      // px: 1,
       cursor: "pointer",
       lineHeight: "1.2",
       "&.active": {
         color: "secondary",
       },
+      "@media screen and (min-width: 1220px)": {
+        fontSize: "1.3rem",
+      }
     },
   },
 };
