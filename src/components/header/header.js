@@ -119,7 +119,6 @@ const styles = {
     a: {
       fontSize: "1.05rem",
       fontWeight: "400",
-      // px: 1,
       cursor: "pointer",
       lineHeight: "1.2",
       "&.active": {
