@@ -44,7 +44,7 @@ export default function WorkFlow() {
           src={"https://general-flowise.s3.amazonaws.com/Introduction.mp4"}
           width="100%"
           controls="controls"
-          autoplay="true"
+          autoPlay={true}
         />
       </Container>
     </section>
